@@ -1,0 +1,28 @@
+.ArticlePage {
+  // padding: 1rem;
+  max-width: 50rem;
+  // max-width: 640px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  // gap: 1rem;
+  h1 {
+    text-align: center;
+    font-size: var(--fz-7);
+    color: var(--acc-clr-4);
+    margin-bottom: 0.5rem;
+  }
+  .info {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--fc-2);
+    // font-weight: 400;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  article {
+    font-size: var(--fz-4);
+    line-height: 1.4;
+  }
+}

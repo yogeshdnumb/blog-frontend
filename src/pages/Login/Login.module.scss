@@ -1,0 +1,133 @@
+* {
+  // outline: solid 1px red;
+  margin: 0;
+  padding: 0;
+}
+
+.Login {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  font-size: var(--fz-4);
+  gap: 2rem;
+  // color: var(--fc-1);
+
+  // padding: 3rem;
+  max-width: 25rem;
+  margin: auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+    width: 100%;
+    // padding: 1rem;
+
+    // background: #fff7ed;
+
+    // max-width: 100%;
+  }
+
+  .usernameContainer,
+  .passwordContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+    position: relative;
+    // color: var(--fc-2);
+
+    // max-width: 30rem;
+    // width: 100%;
+  }
+
+  .errMsg {
+    color: var(--acc-clr-3);
+    font-weight: 700;
+    font-size: var(--fz-5);
+  }
+  h1 {
+    color: var(--acc-clr-2);
+  }
+
+  button {
+    // width: ;
+    font-size: var(--fz-6);
+    padding-inline: 0.6rem;
+    padding-block: 0.2rem;
+    color: var(--acc-clr-2);
+    font-weight: 700;
+    background: var(--bg-clr);
+    // background: #fff7ed;
+    outline: 0;
+    border: 2px solid var(--acc-clr-2);
+    border-radius: 4px;
+    cursor: pointer;
+    // border: 0;
+  }
+  button:focus {
+    border: 3px solid var(--acc-clr-4);
+  }
+
+  label {
+    // inset: 0;
+    position: absolute;
+    font-size: var(--fz-5);
+    top: 0.5rem;
+    // inset: 0;
+    left: 0.9rem;
+    display: flex;
+    gap: 0.3rem;
+
+    // align-items: center;
+  }
+  .eye {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    cursor: pointer;
+    // margin-left: auto;
+    // width: 200px;
+  }
+  input {
+    font-size: var(--fz-5);
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid var(--acc-clr-5);
+    // border: 0;
+    outline: 0;
+  }
+  input:not(:placeholder-shown) + label,
+  input:focus + label {
+    top: -1rem;
+    background: var(--bg-clr);
+    // background: transparent;
+    // font-weight: 700;
+    // font-size: var(--fz-4);
+  }
+  input:focus + label {
+    color: var(--acc-clr-4);
+    font-weight: 700;
+    // font-weight: 700;
+  }
+  input:active,
+  input:focus {
+    border: 2px solid var(--acc-clr-4);
+  }
+  // label::before {
+  //   content: url(../../assets/user.svg);
+  // }
+  .misc {
+    font-size: var(--fz-5);
+    a {
+      color: var(--acc-clr-4);
+      text-decoration: none;
+    }
+  }
+}

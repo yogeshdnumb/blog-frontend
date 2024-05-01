@@ -1,0 +1,66 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  .logo {
+    font-family: "Pacifico", cursive;
+    font-size: var(--fz-6);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--acc-clr-4);
+  }
+  nav li {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+  }
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: var(--fc-2);
+      font-weight: 600;
+    }
+    .active {
+      text-decoration-style: solid;
+      text-decoration-thickness: 4px;
+      text-decoration-color: var(--acc-clr-3);
+      text-decoration-line: underline;
+      // color: red;
+    }
+  }
+  .menuIcons {
+    // display: none;
+    transform: scale(0);
+    color: var(--acc-clr-4);
+  }
+  @media (width<27rem) {
+    .navbar ul {
+      position: absolute;
+      flex-direction: column;
+      inset: 0 0 0 40%;
+      // background: var(--acc-clr-1);
+      background: hsla(0, 0%, 100%, 0.3);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      // display: flex;
+      // justify-content: center;
+      align-items: center;
+      font-size: var(--fz-5);
+    }
+    .menuIcons {
+      position: absolute;
+      z-index: 999;
+      right: 1rem;
+      top: 1.5rem;
+      transform: scale(1);
+    }
+    .hidden {
+      // display: none;
+      transform: scale(0);
+    }
+  }
+}
