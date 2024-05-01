@@ -14,6 +14,7 @@ import RequireAuth from "./components/RequireAuth/RequireAuth.tsx";
 
 export default function App() {
   const [auth, setAuth] = useState("");
+
   return (
     <div className={styles.App}>
       <authContext.Provider value={{ auth, setAuth }}>
